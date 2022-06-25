@@ -1,1 +1,9 @@
 c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\ContactTracingApp.exe.config
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\ContactTracingApp.exe
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\ContactTracingApp.pdb
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.csprojResolveAssemblyReference.cache
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.Form1.resources
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.Properties.Resources.resources
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.csproj.GenerateResource.Cache
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.exe
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.pdb
