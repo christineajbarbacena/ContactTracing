@@ -374,7 +374,7 @@
             // 
             this.txtboxEmailAdd.Location = new System.Drawing.Point(109, 264);
             this.txtboxEmailAdd.Name = "txtboxEmailAdd";
-            this.txtboxEmailAdd.Size = new System.Drawing.Size(183, 22);
+            this.txtboxEmailAdd.Size = new System.Drawing.Size(239, 22);
             this.txtboxEmailAdd.TabIndex = 30;
             // 
             // lblMobileNumber
