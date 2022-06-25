@@ -35,6 +35,15 @@
             this.txtboxDate = new System.Windows.Forms.TextBox();
             this.lblTime = new System.Windows.Forms.Label();
             this.txtboxTime = new System.Windows.Forms.TextBox();
+            this.lblPersonalInfo = new System.Windows.Forms.Label();
+            this.lblFN = new System.Windows.Forms.Label();
+            this.txtboxFirstName = new System.Windows.Forms.TextBox();
+            this.lblMI = new System.Windows.Forms.Label();
+            this.txtboxMiddleInitial = new System.Windows.Forms.TextBox();
+            this.lblSN = new System.Windows.Forms.Label();
+            this.lblSuffix = new System.Windows.Forms.Label();
+            this.txtboxSurname = new System.Windows.Forms.TextBox();
+            this.txtboxSuffix = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -59,7 +68,7 @@
             this.lblInstructions.Name = "lblInstructions";
             this.lblInstructions.Size = new System.Drawing.Size(379, 16);
             this.lblInstructions.TabIndex = 1;
-            this.lblInstructions.Text = "Kindly provide the needed information accurately and honestly:";
+            this.lblInstructions.Text = "Kindly provide the needed information accurately and honestly.";
             // 
             // lblDate
             // 
@@ -99,6 +108,94 @@
             this.txtboxTime.Size = new System.Drawing.Size(117, 22);
             this.txtboxTime.TabIndex = 5;
             // 
+            // lblPersonalInfo
+            // 
+            this.lblPersonalInfo.AutoSize = true;
+            this.lblPersonalInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblPersonalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersonalInfo.Location = new System.Drawing.Point(13, 135);
+            this.lblPersonalInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPersonalInfo.Name = "lblPersonalInfo";
+            this.lblPersonalInfo.Size = new System.Drawing.Size(150, 16);
+            this.lblPersonalInfo.TabIndex = 6;
+            this.lblPersonalInfo.Text = "Personal Information";
+            // 
+            // lblFN
+            // 
+            this.lblFN.AutoSize = true;
+            this.lblFN.BackColor = System.Drawing.Color.Transparent;
+            this.lblFN.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFN.Location = new System.Drawing.Point(10, 166);
+            this.lblFN.Name = "lblFN";
+            this.lblFN.Size = new System.Drawing.Size(71, 15);
+            this.lblFN.TabIndex = 7;
+            this.lblFN.Text = "First Name:";
+            this.lblFN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxFirstName
+            // 
+            this.txtboxFirstName.Location = new System.Drawing.Point(87, 159);
+            this.txtboxFirstName.Name = "txtboxFirstName";
+            this.txtboxFirstName.Size = new System.Drawing.Size(133, 22);
+            this.txtboxFirstName.TabIndex = 8;
+            // 
+            // lblMI
+            // 
+            this.lblMI.AutoSize = true;
+            this.lblMI.BackColor = System.Drawing.Color.Transparent;
+            this.lblMI.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMI.Location = new System.Drawing.Point(226, 166);
+            this.lblMI.Name = "lblMI";
+            this.lblMI.Size = new System.Drawing.Size(85, 15);
+            this.lblMI.TabIndex = 9;
+            this.lblMI.Text = "Middle Initial:";
+            this.lblMI.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxMiddleInitial
+            // 
+            this.txtboxMiddleInitial.Location = new System.Drawing.Point(317, 159);
+            this.txtboxMiddleInitial.Name = "txtboxMiddleInitial";
+            this.txtboxMiddleInitial.Size = new System.Drawing.Size(31, 22);
+            this.txtboxMiddleInitial.TabIndex = 10;
+            // 
+            // lblSN
+            // 
+            this.lblSN.AutoSize = true;
+            this.lblSN.BackColor = System.Drawing.Color.Transparent;
+            this.lblSN.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSN.Location = new System.Drawing.Point(355, 166);
+            this.lblSN.Name = "lblSN";
+            this.lblSN.Size = new System.Drawing.Size(58, 15);
+            this.lblSN.TabIndex = 11;
+            this.lblSN.Text = "Surname:";
+            this.lblSN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblSuffix
+            // 
+            this.lblSuffix.AutoSize = true;
+            this.lblSuffix.BackColor = System.Drawing.Color.Transparent;
+            this.lblSuffix.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSuffix.Location = new System.Drawing.Point(512, 166);
+            this.lblSuffix.Name = "lblSuffix";
+            this.lblSuffix.Size = new System.Drawing.Size(41, 15);
+            this.lblSuffix.TabIndex = 12;
+            this.lblSuffix.Text = "Suffix:";
+            this.lblSuffix.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxSurname
+            // 
+            this.txtboxSurname.Location = new System.Drawing.Point(419, 159);
+            this.txtboxSurname.Name = "txtboxSurname";
+            this.txtboxSurname.Size = new System.Drawing.Size(87, 22);
+            this.txtboxSurname.TabIndex = 13;
+            // 
+            // txtboxSuffix
+            // 
+            this.txtboxSuffix.Location = new System.Drawing.Point(559, 159);
+            this.txtboxSuffix.Name = "txtboxSuffix";
+            this.txtboxSuffix.Size = new System.Drawing.Size(57, 22);
+            this.txtboxSuffix.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -107,6 +204,15 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(716, 475);
+            this.Controls.Add(this.txtboxSuffix);
+            this.Controls.Add(this.txtboxSurname);
+            this.Controls.Add(this.lblSuffix);
+            this.Controls.Add(this.lblSN);
+            this.Controls.Add(this.txtboxMiddleInitial);
+            this.Controls.Add(this.lblMI);
+            this.Controls.Add(this.txtboxFirstName);
+            this.Controls.Add(this.lblFN);
+            this.Controls.Add(this.lblPersonalInfo);
             this.Controls.Add(this.txtboxTime);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.txtboxDate);
@@ -119,7 +225,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Opacity = 0.9D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -134,6 +240,15 @@
         private System.Windows.Forms.TextBox txtboxDate;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.TextBox txtboxTime;
+        private System.Windows.Forms.Label lblPersonalInfo;
+        private System.Windows.Forms.Label lblFN;
+        private System.Windows.Forms.TextBox txtboxFirstName;
+        private System.Windows.Forms.Label lblMI;
+        private System.Windows.Forms.TextBox txtboxMiddleInitial;
+        private System.Windows.Forms.Label lblSN;
+        private System.Windows.Forms.Label lblSuffix;
+        private System.Windows.Forms.TextBox txtboxSurname;
+        private System.Windows.Forms.TextBox txtboxSuffix;
     }
 }
 
