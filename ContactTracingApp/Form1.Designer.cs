@@ -58,6 +58,10 @@
             this.lblStreetName = new System.Windows.Forms.Label();
             this.lblBarangay = new System.Windows.Forms.Label();
             this.txtboxBarangay = new System.Windows.Forms.TextBox();
+            this.lblEmailAdd = new System.Windows.Forms.Label();
+            this.txtboxEmailAdd = new System.Windows.Forms.TextBox();
+            this.lblMobileNumber = new System.Windows.Forms.Label();
+            this.txtboxMobileNum = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -343,6 +347,44 @@
             this.txtboxBarangay.Size = new System.Drawing.Size(75, 22);
             this.txtboxBarangay.TabIndex = 28;
             // 
+            // lblEmailAdd
+            // 
+            this.lblEmailAdd.AutoSize = true;
+            this.lblEmailAdd.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmailAdd.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailAdd.Location = new System.Drawing.Point(13, 271);
+            this.lblEmailAdd.Name = "lblEmailAdd";
+            this.lblEmailAdd.Size = new System.Drawing.Size(90, 15);
+            this.lblEmailAdd.TabIndex = 29;
+            this.lblEmailAdd.Text = "Email Address:";
+            this.lblEmailAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxEmailAdd
+            // 
+            this.txtboxEmailAdd.Location = new System.Drawing.Point(109, 264);
+            this.txtboxEmailAdd.Name = "txtboxEmailAdd";
+            this.txtboxEmailAdd.Size = new System.Drawing.Size(183, 22);
+            this.txtboxEmailAdd.TabIndex = 30;
+            // 
+            // lblMobileNumber
+            // 
+            this.lblMobileNumber.AutoSize = true;
+            this.lblMobileNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblMobileNumber.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMobileNumber.Location = new System.Drawing.Point(363, 271);
+            this.lblMobileNumber.Name = "lblMobileNumber";
+            this.lblMobileNumber.Size = new System.Drawing.Size(97, 15);
+            this.lblMobileNumber.TabIndex = 31;
+            this.lblMobileNumber.Text = "Mobile Number:";
+            this.lblMobileNumber.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxMobileNum
+            // 
+            this.txtboxMobileNum.Location = new System.Drawing.Point(470, 264);
+            this.txtboxMobileNum.Name = "txtboxMobileNum";
+            this.txtboxMobileNum.Size = new System.Drawing.Size(146, 22);
+            this.txtboxMobileNum.TabIndex = 32;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -351,6 +393,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(716, 475);
+            this.Controls.Add(this.txtboxMobileNum);
+            this.Controls.Add(this.lblMobileNumber);
+            this.Controls.Add(this.txtboxEmailAdd);
+            this.Controls.Add(this.lblEmailAdd);
             this.Controls.Add(this.txtboxBarangay);
             this.Controls.Add(this.lblBarangay);
             this.Controls.Add(this.lblStreetName);
@@ -424,6 +470,10 @@
         private System.Windows.Forms.Label lblStreetName;
         private System.Windows.Forms.Label lblBarangay;
         private System.Windows.Forms.TextBox txtboxBarangay;
+        private System.Windows.Forms.Label lblEmailAdd;
+        private System.Windows.Forms.TextBox txtboxEmailAdd;
+        private System.Windows.Forms.Label lblMobileNumber;
+        private System.Windows.Forms.TextBox txtboxMobileNum;
     }
 }
 
