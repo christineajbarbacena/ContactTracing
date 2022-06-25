@@ -62,6 +62,16 @@
             this.txtboxEmailAdd = new System.Windows.Forms.TextBox();
             this.lblMobileNumber = new System.Windows.Forms.Label();
             this.txtboxMobileNum = new System.Windows.Forms.TextBox();
+            this.lblVaccinationDetails = new System.Windows.Forms.Label();
+            this.lblareyouvaccinated = new System.Windows.Forms.Label();
+            this.lblVDInstruction = new System.Windows.Forms.Label();
+            this.txtboxAYV = new System.Windows.Forms.TextBox();
+            this.lbl1stDose = new System.Windows.Forms.Label();
+            this.txtboxFirstDose = new System.Windows.Forms.TextBox();
+            this.lbl2ndDose = new System.Windows.Forms.Label();
+            this.txtbox2ndDose = new System.Windows.Forms.TextBox();
+            this.lblBooster = new System.Windows.Forms.Label();
+            this.txtboxBooster = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -134,9 +144,9 @@
             this.lblPersonalInfo.Location = new System.Drawing.Point(13, 135);
             this.lblPersonalInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPersonalInfo.Name = "lblPersonalInfo";
-            this.lblPersonalInfo.Size = new System.Drawing.Size(150, 16);
+            this.lblPersonalInfo.Size = new System.Drawing.Size(154, 16);
             this.lblPersonalInfo.TabIndex = 6;
-            this.lblPersonalInfo.Text = "Personal Information";
+            this.lblPersonalInfo.Text = "Personal Information:\r\n";
             // 
             // lblFN
             // 
@@ -385,6 +395,106 @@
             this.txtboxMobileNum.Size = new System.Drawing.Size(146, 22);
             this.txtboxMobileNum.TabIndex = 32;
             // 
+            // lblVaccinationDetails
+            // 
+            this.lblVaccinationDetails.AutoSize = true;
+            this.lblVaccinationDetails.BackColor = System.Drawing.Color.Transparent;
+            this.lblVaccinationDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVaccinationDetails.Location = new System.Drawing.Point(13, 308);
+            this.lblVaccinationDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVaccinationDetails.Name = "lblVaccinationDetails";
+            this.lblVaccinationDetails.Size = new System.Drawing.Size(146, 16);
+            this.lblVaccinationDetails.TabIndex = 33;
+            this.lblVaccinationDetails.Text = "Vaccination Details:";
+            // 
+            // lblareyouvaccinated
+            // 
+            this.lblareyouvaccinated.AutoSize = true;
+            this.lblareyouvaccinated.BackColor = System.Drawing.Color.Transparent;
+            this.lblareyouvaccinated.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblareyouvaccinated.Location = new System.Drawing.Point(13, 336);
+            this.lblareyouvaccinated.Name = "lblareyouvaccinated";
+            this.lblareyouvaccinated.Size = new System.Drawing.Size(117, 15);
+            this.lblareyouvaccinated.TabIndex = 34;
+            this.lblareyouvaccinated.Text = "Are you vaccinated?";
+            this.lblareyouvaccinated.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblVDInstruction
+            // 
+            this.lblVDInstruction.AutoSize = true;
+            this.lblVDInstruction.BackColor = System.Drawing.Color.Transparent;
+            this.lblVDInstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVDInstruction.Location = new System.Drawing.Point(161, 310);
+            this.lblVDInstruction.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVDInstruction.Name = "lblVDInstruction";
+            this.lblVDInstruction.Size = new System.Drawing.Size(204, 13);
+            this.lblVDInstruction.TabIndex = 35;
+            this.lblVDInstruction.Text = "(Answer YES if applicable, otherwise NO.)\r\n";
+            // 
+            // txtboxAYV
+            // 
+            this.txtboxAYV.Location = new System.Drawing.Point(16, 354);
+            this.txtboxAYV.Name = "txtboxAYV";
+            this.txtboxAYV.Size = new System.Drawing.Size(57, 22);
+            this.txtboxAYV.TabIndex = 36;
+            // 
+            // lbl1stDose
+            // 
+            this.lbl1stDose.AutoSize = true;
+            this.lbl1stDose.BackColor = System.Drawing.Color.Transparent;
+            this.lbl1stDose.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1stDose.Location = new System.Drawing.Point(161, 336);
+            this.lbl1stDose.Name = "lbl1stDose";
+            this.lbl1stDose.Size = new System.Drawing.Size(60, 15);
+            this.lbl1stDose.TabIndex = 37;
+            this.lbl1stDose.Text = "1st Dose?\r\n";
+            this.lbl1stDose.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxFirstDose
+            // 
+            this.txtboxFirstDose.Location = new System.Drawing.Point(163, 354);
+            this.txtboxFirstDose.Name = "txtboxFirstDose";
+            this.txtboxFirstDose.Size = new System.Drawing.Size(57, 22);
+            this.txtboxFirstDose.TabIndex = 38;
+            // 
+            // lbl2ndDose
+            // 
+            this.lbl2ndDose.AutoSize = true;
+            this.lbl2ndDose.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2ndDose.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2ndDose.Location = new System.Drawing.Point(161, 394);
+            this.lbl2ndDose.Name = "lbl2ndDose";
+            this.lbl2ndDose.Size = new System.Drawing.Size(64, 15);
+            this.lbl2ndDose.TabIndex = 39;
+            this.lbl2ndDose.Text = "2nd Dose?\r\n";
+            this.lbl2ndDose.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtbox2ndDose
+            // 
+            this.txtbox2ndDose.Location = new System.Drawing.Point(164, 412);
+            this.txtbox2ndDose.Name = "txtbox2ndDose";
+            this.txtbox2ndDose.Size = new System.Drawing.Size(57, 22);
+            this.txtbox2ndDose.TabIndex = 40;
+            // 
+            // lblBooster
+            // 
+            this.lblBooster.AutoSize = true;
+            this.lblBooster.BackColor = System.Drawing.Color.Transparent;
+            this.lblBooster.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooster.Location = new System.Drawing.Point(13, 394);
+            this.lblBooster.Name = "lblBooster";
+            this.lblBooster.Size = new System.Drawing.Size(82, 15);
+            this.lblBooster.TabIndex = 41;
+            this.lblBooster.Text = "Booster Shot?";
+            this.lblBooster.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxBooster
+            // 
+            this.txtboxBooster.Location = new System.Drawing.Point(16, 412);
+            this.txtboxBooster.Name = "txtboxBooster";
+            this.txtboxBooster.Size = new System.Drawing.Size(57, 22);
+            this.txtboxBooster.TabIndex = 42;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -393,6 +503,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(716, 475);
+            this.Controls.Add(this.txtboxBooster);
+            this.Controls.Add(this.lblBooster);
+            this.Controls.Add(this.txtbox2ndDose);
+            this.Controls.Add(this.lbl2ndDose);
+            this.Controls.Add(this.txtboxFirstDose);
+            this.Controls.Add(this.lbl1stDose);
+            this.Controls.Add(this.txtboxAYV);
+            this.Controls.Add(this.lblVDInstruction);
+            this.Controls.Add(this.lblareyouvaccinated);
+            this.Controls.Add(this.lblVaccinationDetails);
             this.Controls.Add(this.txtboxMobileNum);
             this.Controls.Add(this.lblMobileNumber);
             this.Controls.Add(this.txtboxEmailAdd);
@@ -474,6 +594,16 @@
         private System.Windows.Forms.TextBox txtboxEmailAdd;
         private System.Windows.Forms.Label lblMobileNumber;
         private System.Windows.Forms.TextBox txtboxMobileNum;
+        private System.Windows.Forms.Label lblVaccinationDetails;
+        private System.Windows.Forms.Label lblareyouvaccinated;
+        private System.Windows.Forms.Label lblVDInstruction;
+        private System.Windows.Forms.TextBox txtboxAYV;
+        private System.Windows.Forms.Label lbl1stDose;
+        private System.Windows.Forms.TextBox txtboxFirstDose;
+        private System.Windows.Forms.Label lbl2ndDose;
+        private System.Windows.Forms.TextBox txtbox2ndDose;
+        private System.Windows.Forms.Label lblBooster;
+        private System.Windows.Forms.TextBox txtboxBooster;
     }
 }
 
