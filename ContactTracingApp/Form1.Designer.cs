@@ -72,6 +72,7 @@
             this.txtbox2ndDose = new System.Windows.Forms.TextBox();
             this.lblBooster = new System.Windows.Forms.Label();
             this.txtboxBooster = new System.Windows.Forms.TextBox();
+            this.bttnSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -495,6 +496,17 @@
             this.txtboxBooster.Size = new System.Drawing.Size(57, 22);
             this.txtboxBooster.TabIndex = 42;
             // 
+            // bttnSubmit
+            // 
+            this.bttnSubmit.BackColor = System.Drawing.Color.SpringGreen;
+            this.bttnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSubmit.Location = new System.Drawing.Point(539, 402);
+            this.bttnSubmit.Name = "bttnSubmit";
+            this.bttnSubmit.Size = new System.Drawing.Size(77, 32);
+            this.bttnSubmit.TabIndex = 43;
+            this.bttnSubmit.Text = "Submit";
+            this.bttnSubmit.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -502,7 +514,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(716, 475);
+            this.ClientSize = new System.Drawing.Size(775, 475);
+            this.Controls.Add(this.bttnSubmit);
             this.Controls.Add(this.txtboxBooster);
             this.Controls.Add(this.lblBooster);
             this.Controls.Add(this.txtbox2ndDose);
@@ -604,6 +617,7 @@
         private System.Windows.Forms.TextBox txtbox2ndDose;
         private System.Windows.Forms.Label lblBooster;
         private System.Windows.Forms.TextBox txtboxBooster;
+        private System.Windows.Forms.Button bttnSubmit;
     }
 }
 
