@@ -1,0 +1,1 @@
+c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\ContactTracingApp.exe.config
