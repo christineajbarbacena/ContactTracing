@@ -44,6 +44,12 @@
             this.lblSuffix = new System.Windows.Forms.Label();
             this.txtboxSurname = new System.Windows.Forms.TextBox();
             this.txtboxSuffix = new System.Windows.Forms.TextBox();
+            this.lblBirthdate = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.txtboxAge = new System.Windows.Forms.TextBox();
+            this.lblSex = new System.Windows.Forms.Label();
+            this.txtboxSex = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -77,14 +83,14 @@
             this.lblDate.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.Location = new System.Drawing.Point(12, 98);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(44, 15);
+            this.lblDate.Size = new System.Drawing.Size(146, 15);
             this.lblDate.TabIndex = 2;
-            this.lblDate.Text = "Date:";
+            this.lblDate.Text = "Date (MM//DD//YY):";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtboxDate
             // 
-            this.txtboxDate.Location = new System.Drawing.Point(62, 91);
+            this.txtboxDate.Location = new System.Drawing.Point(164, 91);
             this.txtboxDate.Name = "txtboxDate";
             this.txtboxDate.Size = new System.Drawing.Size(211, 22);
             this.txtboxDate.TabIndex = 3;
@@ -94,7 +100,7 @@
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
             this.lblTime.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(309, 98);
+            this.lblTime.Location = new System.Drawing.Point(395, 98);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(43, 15);
             this.lblTime.TabIndex = 4;
@@ -103,7 +109,7 @@
             // 
             // txtboxTime
             // 
-            this.txtboxTime.Location = new System.Drawing.Point(358, 91);
+            this.txtboxTime.Location = new System.Drawing.Point(444, 91);
             this.txtboxTime.Name = "txtboxTime";
             this.txtboxTime.Size = new System.Drawing.Size(117, 22);
             this.txtboxTime.TabIndex = 5;
@@ -196,6 +202,63 @@
             this.txtboxSuffix.Size = new System.Drawing.Size(57, 22);
             this.txtboxSuffix.TabIndex = 14;
             // 
+            // lblBirthdate
+            // 
+            this.lblBirthdate.AutoSize = true;
+            this.lblBirthdate.BackColor = System.Drawing.Color.Transparent;
+            this.lblBirthdate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthdate.Location = new System.Drawing.Point(12, 204);
+            this.lblBirthdate.Name = "lblBirthdate";
+            this.lblBirthdate.Size = new System.Drawing.Size(153, 15);
+            this.lblBirthdate.TabIndex = 15;
+            this.lblBirthdate.Text = "Birth Date (mm//dd//yy):";
+            this.lblBirthdate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(171, 197);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(133, 22);
+            this.textBox1.TabIndex = 16;
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.BackColor = System.Drawing.Color.Transparent;
+            this.lblAge.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.Location = new System.Drawing.Point(330, 204);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(30, 15);
+            this.lblAge.TabIndex = 17;
+            this.lblAge.Text = "Age:";
+            this.lblAge.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxAge
+            // 
+            this.txtboxAge.Location = new System.Drawing.Point(366, 197);
+            this.txtboxAge.Name = "txtboxAge";
+            this.txtboxAge.Size = new System.Drawing.Size(86, 22);
+            this.txtboxAge.TabIndex = 18;
+            // 
+            // lblSex
+            // 
+            this.lblSex.AutoSize = true;
+            this.lblSex.BackColor = System.Drawing.Color.Transparent;
+            this.lblSex.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSex.Location = new System.Drawing.Point(488, 204);
+            this.lblSex.Name = "lblSex";
+            this.lblSex.Size = new System.Drawing.Size(28, 15);
+            this.lblSex.TabIndex = 19;
+            this.lblSex.Text = "Sex:";
+            this.lblSex.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxSex
+            // 
+            this.txtboxSex.Location = new System.Drawing.Point(522, 197);
+            this.txtboxSex.Name = "txtboxSex";
+            this.txtboxSex.Size = new System.Drawing.Size(94, 22);
+            this.txtboxSex.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -204,6 +267,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(716, 475);
+            this.Controls.Add(this.txtboxSex);
+            this.Controls.Add(this.lblSex);
+            this.Controls.Add(this.txtboxAge);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblBirthdate);
             this.Controls.Add(this.txtboxSuffix);
             this.Controls.Add(this.txtboxSurname);
             this.Controls.Add(this.lblSuffix);
@@ -249,6 +318,12 @@
         private System.Windows.Forms.Label lblSuffix;
         private System.Windows.Forms.TextBox txtboxSurname;
         private System.Windows.Forms.TextBox txtboxSuffix;
+        private System.Windows.Forms.Label lblBirthdate;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.TextBox txtboxAge;
+        private System.Windows.Forms.Label lblSex;
+        private System.Windows.Forms.TextBox txtboxSex;
     }
 }
 
