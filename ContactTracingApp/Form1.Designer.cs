@@ -45,11 +45,19 @@
             this.txtboxSurname = new System.Windows.Forms.TextBox();
             this.txtboxSuffix = new System.Windows.Forms.TextBox();
             this.lblBirthdate = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtboxBirthdate = new System.Windows.Forms.TextBox();
             this.lblAge = new System.Windows.Forms.Label();
             this.txtboxAge = new System.Windows.Forms.TextBox();
             this.lblSex = new System.Windows.Forms.Label();
             this.txtboxSex = new System.Windows.Forms.TextBox();
+            this.lblProvince = new System.Windows.Forms.Label();
+            this.txtboxProvince = new System.Windows.Forms.TextBox();
+            this.lblCity = new System.Windows.Forms.Label();
+            this.txtboxCity = new System.Windows.Forms.TextBox();
+            this.txtboxStreetName = new System.Windows.Forms.TextBox();
+            this.lblStreetName = new System.Windows.Forms.Label();
+            this.lblBarangay = new System.Windows.Forms.Label();
+            this.txtboxBarangay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -214,12 +222,12 @@
             this.lblBirthdate.Text = "Birth Date (mm//dd//yy):";
             this.lblBirthdate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // txtboxBirthdate
             // 
-            this.textBox1.Location = new System.Drawing.Point(171, 197);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 22);
-            this.textBox1.TabIndex = 16;
+            this.txtboxBirthdate.Location = new System.Drawing.Point(171, 197);
+            this.txtboxBirthdate.Name = "txtboxBirthdate";
+            this.txtboxBirthdate.Size = new System.Drawing.Size(133, 22);
+            this.txtboxBirthdate.TabIndex = 16;
             // 
             // lblAge
             // 
@@ -259,6 +267,82 @@
             this.txtboxSex.Size = new System.Drawing.Size(94, 22);
             this.txtboxSex.TabIndex = 20;
             // 
+            // lblProvince
+            // 
+            this.lblProvince.AutoSize = true;
+            this.lblProvince.BackColor = System.Drawing.Color.Transparent;
+            this.lblProvince.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvince.Location = new System.Drawing.Point(13, 238);
+            this.lblProvince.Name = "lblProvince";
+            this.lblProvince.Size = new System.Drawing.Size(59, 15);
+            this.lblProvince.TabIndex = 21;
+            this.lblProvince.Text = "Province:";
+            this.lblProvince.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxProvince
+            // 
+            this.txtboxProvince.Location = new System.Drawing.Point(78, 231);
+            this.txtboxProvince.Name = "txtboxProvince";
+            this.txtboxProvince.Size = new System.Drawing.Size(87, 22);
+            this.txtboxProvince.TabIndex = 22;
+            // 
+            // lblCity
+            // 
+            this.lblCity.AutoSize = true;
+            this.lblCity.BackColor = System.Drawing.Color.Transparent;
+            this.lblCity.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCity.Location = new System.Drawing.Point(171, 238);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(32, 15);
+            this.lblCity.TabIndex = 23;
+            this.lblCity.Text = "City:";
+            this.lblCity.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxCity
+            // 
+            this.txtboxCity.Location = new System.Drawing.Point(209, 231);
+            this.txtboxCity.Name = "txtboxCity";
+            this.txtboxCity.Size = new System.Drawing.Size(83, 22);
+            this.txtboxCity.TabIndex = 24;
+            // 
+            // txtboxStreetName
+            // 
+            this.txtboxStreetName.Location = new System.Drawing.Point(381, 231);
+            this.txtboxStreetName.Name = "txtboxStreetName";
+            this.txtboxStreetName.Size = new System.Drawing.Size(87, 22);
+            this.txtboxStreetName.TabIndex = 25;
+            // 
+            // lblStreetName
+            // 
+            this.lblStreetName.AutoSize = true;
+            this.lblStreetName.BackColor = System.Drawing.Color.Transparent;
+            this.lblStreetName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStreetName.Location = new System.Drawing.Point(299, 238);
+            this.lblStreetName.Name = "lblStreetName";
+            this.lblStreetName.Size = new System.Drawing.Size(76, 15);
+            this.lblStreetName.TabIndex = 26;
+            this.lblStreetName.Text = "Street Name:";
+            this.lblStreetName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblBarangay
+            // 
+            this.lblBarangay.AutoSize = true;
+            this.lblBarangay.BackColor = System.Drawing.Color.Transparent;
+            this.lblBarangay.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBarangay.Location = new System.Drawing.Point(474, 238);
+            this.lblBarangay.Name = "lblBarangay";
+            this.lblBarangay.Size = new System.Drawing.Size(61, 15);
+            this.lblBarangay.TabIndex = 27;
+            this.lblBarangay.Text = "Barangay:";
+            this.lblBarangay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxBarangay
+            // 
+            this.txtboxBarangay.Location = new System.Drawing.Point(541, 234);
+            this.txtboxBarangay.Name = "txtboxBarangay";
+            this.txtboxBarangay.Size = new System.Drawing.Size(75, 22);
+            this.txtboxBarangay.TabIndex = 28;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,11 +351,19 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(716, 475);
+            this.Controls.Add(this.txtboxBarangay);
+            this.Controls.Add(this.lblBarangay);
+            this.Controls.Add(this.lblStreetName);
+            this.Controls.Add(this.txtboxStreetName);
+            this.Controls.Add(this.txtboxCity);
+            this.Controls.Add(this.lblCity);
+            this.Controls.Add(this.txtboxProvince);
+            this.Controls.Add(this.lblProvince);
             this.Controls.Add(this.txtboxSex);
             this.Controls.Add(this.lblSex);
             this.Controls.Add(this.txtboxAge);
             this.Controls.Add(this.lblAge);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtboxBirthdate);
             this.Controls.Add(this.lblBirthdate);
             this.Controls.Add(this.txtboxSuffix);
             this.Controls.Add(this.txtboxSurname);
@@ -319,11 +411,19 @@
         private System.Windows.Forms.TextBox txtboxSurname;
         private System.Windows.Forms.TextBox txtboxSuffix;
         private System.Windows.Forms.Label lblBirthdate;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtboxBirthdate;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.TextBox txtboxAge;
         private System.Windows.Forms.Label lblSex;
         private System.Windows.Forms.TextBox txtboxSex;
+        private System.Windows.Forms.Label lblProvince;
+        private System.Windows.Forms.TextBox txtboxProvince;
+        private System.Windows.Forms.Label lblCity;
+        private System.Windows.Forms.TextBox txtboxCity;
+        private System.Windows.Forms.TextBox txtboxStreetName;
+        private System.Windows.Forms.Label lblStreetName;
+        private System.Windows.Forms.Label lblBarangay;
+        private System.Windows.Forms.TextBox txtboxBarangay;
     }
 }
 
