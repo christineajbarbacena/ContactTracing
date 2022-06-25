@@ -75,6 +75,11 @@
             this.bttnSubmit = new System.Windows.Forms.Button();
             this.lblInstruction1 = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.txtboxUsername = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtboxPassword = new System.Windows.Forms.TextBox();
+            this.bttnAdminSignIn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -500,9 +505,9 @@
             // 
             // bttnSubmit
             // 
-            this.bttnSubmit.BackColor = System.Drawing.Color.SpringGreen;
+            this.bttnSubmit.BackColor = System.Drawing.Color.Red;
             this.bttnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnSubmit.Location = new System.Drawing.Point(333, 377);
+            this.bttnSubmit.Location = new System.Drawing.Point(271, 402);
             this.bttnSubmit.Name = "bttnSubmit";
             this.bttnSubmit.Size = new System.Drawing.Size(77, 32);
             this.bttnSubmit.TabIndex = 43;
@@ -526,14 +531,63 @@
             // 
             this.lblAdmin.AutoSize = true;
             this.lblAdmin.BackColor = System.Drawing.Color.Transparent;
-            this.lblAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblAdmin.Location = new System.Drawing.Point(462, 308);
+            this.lblAdmin.Location = new System.Drawing.Point(416, 310);
             this.lblAdmin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(103, 32);
+            this.lblAdmin.Size = new System.Drawing.Size(99, 32);
             this.lblAdmin.TabIndex = 45;
-            this.lblAdmin.Text = "Administrator:\r\n\r\n";
+            this.lblAdmin.Text = "For admin only:\r\n\r\n";
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(416, 340);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(65, 15);
+            this.lblUsername.TabIndex = 46;
+            this.lblUsername.Text = "Username:";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxUsername
+            // 
+            this.txtboxUsername.Location = new System.Drawing.Point(491, 332);
+            this.txtboxUsername.Name = "txtboxUsername";
+            this.txtboxUsername.Size = new System.Drawing.Size(125, 22);
+            this.txtboxUsername.TabIndex = 47;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(416, 374);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(64, 15);
+            this.lblPassword.TabIndex = 48;
+            this.lblPassword.Text = "Password:";
+            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxPassword
+            // 
+            this.txtboxPassword.Location = new System.Drawing.Point(486, 367);
+            this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.Size = new System.Drawing.Size(125, 22);
+            this.txtboxPassword.TabIndex = 49;
+            // 
+            // bttnAdminSignIn
+            // 
+            this.bttnAdminSignIn.BackColor = System.Drawing.Color.DimGray;
+            this.bttnAdminSignIn.Location = new System.Drawing.Point(536, 412);
+            this.bttnAdminSignIn.Name = "bttnAdminSignIn";
+            this.bttnAdminSignIn.Size = new System.Drawing.Size(75, 23);
+            this.bttnAdminSignIn.TabIndex = 50;
+            this.bttnAdminSignIn.Text = "Sign In";
+            this.bttnAdminSignIn.UseVisualStyleBackColor = false;
+            this.bttnAdminSignIn.Click += new System.EventHandler(this.bttnAdminSignIn_Click);
             // 
             // Form1
             // 
@@ -542,7 +596,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(775, 475);
+            this.ClientSize = new System.Drawing.Size(644, 475);
+            this.Controls.Add(this.bttnAdminSignIn);
+            this.Controls.Add(this.txtboxPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtboxUsername);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.lblInstruction1);
             this.Controls.Add(this.bttnSubmit);
@@ -650,6 +709,11 @@
         private System.Windows.Forms.Button bttnSubmit;
         private System.Windows.Forms.Label lblInstruction1;
         private System.Windows.Forms.Label lblAdmin;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.TextBox txtboxUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtboxPassword;
+        private System.Windows.Forms.Button bttnAdminSignIn;
     }
 }
 

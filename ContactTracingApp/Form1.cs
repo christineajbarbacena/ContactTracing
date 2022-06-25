@@ -20,7 +20,7 @@ namespace ContactTracingApp
 
         private void bttnSubmit_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\barbacena\Desktop\ContactTracingResponses\" + txtboxSurname.Text + " " + txtboxFirstName.Text + ".txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\barbacena\Desktop\ContactTracingResponses\" + txtboxDate.Text + ".txt", true);
             file.WriteLine("Contact Tracing Response");
             file.WriteLine("Date and Time: " + txtboxDate.Text + " , " + txtboxTime.Text);
             file.WriteLine("Name: " + txtboxSurname.Text + "," + txtboxFirstName.Text + " " + txtboxMiddleInitial.Text + "." + " " + txtboxSuffix.Text);
@@ -42,6 +42,13 @@ namespace ContactTracingApp
             MessageBox.Show("Thank you Mr/Ms." + txtboxSurname.Text);
             this.Close();
 
+        }
+
+        private void bttnAdminSignIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 Searchdate = new Form2();
+            Searchdate.ShowDialog();
         }
 
     }
