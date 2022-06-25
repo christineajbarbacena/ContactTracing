@@ -73,6 +73,8 @@
             this.lblBooster = new System.Windows.Forms.Label();
             this.txtboxBooster = new System.Windows.Forms.TextBox();
             this.bttnSubmit = new System.Windows.Forms.Button();
+            this.lblInstruction1 = new System.Windows.Forms.Label();
+            this.lblAdmin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -500,13 +502,38 @@
             // 
             this.bttnSubmit.BackColor = System.Drawing.Color.SpringGreen;
             this.bttnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnSubmit.Location = new System.Drawing.Point(539, 402);
+            this.bttnSubmit.Location = new System.Drawing.Point(375, 354);
             this.bttnSubmit.Name = "bttnSubmit";
             this.bttnSubmit.Size = new System.Drawing.Size(77, 32);
             this.bttnSubmit.TabIndex = 43;
             this.bttnSubmit.Text = "Submit";
             this.bttnSubmit.UseVisualStyleBackColor = false;
             this.bttnSubmit.Click += new System.EventHandler(this.bttnSubmit_Click);
+            // 
+            // lblInstruction1
+            // 
+            this.lblInstruction1.AutoSize = true;
+            this.lblInstruction1.BackColor = System.Drawing.Color.Transparent;
+            this.lblInstruction1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstruction1.Location = new System.Drawing.Point(175, 138);
+            this.lblInstruction1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInstruction1.Name = "lblInstruction1";
+            this.lblInstruction1.Size = new System.Drawing.Size(124, 13);
+            this.lblInstruction1.TabIndex = 44;
+            this.lblInstruction1.Text = "(Put NA if not applicable)\r\n";
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.lblAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblAdmin.Location = new System.Drawing.Point(462, 308);
+            this.lblAdmin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(103, 32);
+            this.lblAdmin.TabIndex = 45;
+            this.lblAdmin.Text = "Administrator:\r\n\r\n";
             // 
             // Form1
             // 
@@ -516,6 +543,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(775, 475);
+            this.Controls.Add(this.lblAdmin);
+            this.Controls.Add(this.lblInstruction1);
             this.Controls.Add(this.bttnSubmit);
             this.Controls.Add(this.txtboxBooster);
             this.Controls.Add(this.lblBooster);
@@ -619,6 +648,8 @@
         private System.Windows.Forms.Label lblBooster;
         private System.Windows.Forms.TextBox txtboxBooster;
         private System.Windows.Forms.Button bttnSubmit;
+        private System.Windows.Forms.Label lblInstruction1;
+        private System.Windows.Forms.Label lblAdmin;
     }
 }
 
