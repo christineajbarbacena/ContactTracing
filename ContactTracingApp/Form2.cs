@@ -47,10 +47,9 @@ namespace ContactTracingApp
             var DataFile = Directory.EnumerateFiles(@"C:\Users\barbacena\Desktop\ContactTracingResponses");
             foreach (string file in DataFile)
             {
-
-
+                string viewall = File.ReadAllText(file);
+                MessageBox.Show (viewall);
             }
-        
         }
 
     }

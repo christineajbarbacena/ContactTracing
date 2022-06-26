@@ -20,10 +20,8 @@ namespace ContactTracingApp
 
         private void bttnSubmit_Click(object sender, EventArgs e)
         {
-            byte counter = 0;
             StreamWriter file = new StreamWriter(@"C:\Users\barbacena\Desktop\ContactTracingResponses\" + txtboxDate.Text + ".txt", true);
-            file.WriteLine("Contact Tracing Response " + (counter++).ToString());
-            ++counter;
+            file.WriteLine("Contact Tracing Response ");
             file.WriteLine("Date and Time: " + txtboxDate.Text + " , " + txtboxTime.Text);
             file.WriteLine("Name: " + txtboxSurname.Text + "," + txtboxFirstName.Text + " " + txtboxMiddleInitial.Text + "." + " " + txtboxSuffix.Text);
             file.WriteLine("Birth Date: " + txtboxBirthdate.Text);
@@ -49,8 +47,9 @@ namespace ContactTracingApp
         private void bttnAdminSignIn_Click(object sender, EventArgs e)
         {
             //adding username and password for sign in button
-
-            if ((txtboxUsername.Text == "admin") && (txtboxPassword.Text == "admin"))
+            string username = txtboxUsername.Text;
+            string password = txtboxPassword.Text;
+            if ((username == "admin") && (password == "admin"))
             //right password and username
             {
                 this.Hide();
