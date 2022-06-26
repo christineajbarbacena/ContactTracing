@@ -46,9 +46,20 @@ namespace ContactTracingApp
 
         private void bttnAdminSignIn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 Searchdate = new Form2();
-            Searchdate.ShowDialog();
+            //adding username and password for sign in button
+
+            if ((txtboxUsername.Text == "admin") && (txtboxPassword.Text == "admin"))
+            //right password and username
+            {
+                this.Hide();
+                Form2 adminForm = new Form2();
+                adminForm.ShowDialog();
+            }
+          //incorrect username and password
+            else
+            {
+            MessageBox.Show ("Incorrect Username and/or Password");
+            }
         }
 
     }
