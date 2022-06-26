@@ -33,6 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtboxDate = new System.Windows.Forms.TextBox();
             this.lblDate = new System.Windows.Forms.Label();
+            this.lblViewAll = new System.Windows.Forms.Label();
+            this.bttnViewall = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bttnSearch
@@ -79,11 +81,32 @@
             this.lblDate.Text = "Date:";
             this.lblDate.Click += new System.EventHandler(this.lblDate_Click);
             // 
+            // lblViewAll
+            // 
+            this.lblViewAll.AutoSize = true;
+            this.lblViewAll.Location = new System.Drawing.Point(12, 127);
+            this.lblViewAll.Name = "lblViewAll";
+            this.lblViewAll.Size = new System.Drawing.Size(97, 13);
+            this.lblViewAll.TabIndex = 5;
+            this.lblViewAll.Text = "View all responses:";
+            // 
+            // bttnViewall
+            // 
+            this.bttnViewall.Location = new System.Drawing.Point(250, 115);
+            this.bttnViewall.Name = "bttnViewall";
+            this.bttnViewall.Size = new System.Drawing.Size(75, 23);
+            this.bttnViewall.TabIndex = 6;
+            this.bttnViewall.Text = "View all";
+            this.bttnViewall.UseVisualStyleBackColor = true;
+            this.bttnViewall.Click += new System.EventHandler(this.bttnViewall_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 321);
+            this.ClientSize = new System.Drawing.Size(357, 192);
+            this.Controls.Add(this.bttnViewall);
+            this.Controls.Add(this.lblViewAll);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.txtboxDate);
             this.Controls.Add(this.label2);
@@ -103,5 +126,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtboxDate;
         private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblViewAll;
+        private System.Windows.Forms.Button bttnViewall;
     }
 }

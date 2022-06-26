@@ -20,14 +20,16 @@ namespace ContactTracingApp
 
         private void bttnSubmit_Click(object sender, EventArgs e)
         {
+            byte counter = 0;
             StreamWriter file = new StreamWriter(@"C:\Users\barbacena\Desktop\ContactTracingResponses\" + txtboxDate.Text + ".txt", true);
-            file.WriteLine("Contact Tracing Response");
+            file.WriteLine("Contact Tracing Response " + (counter++).ToString());
+            ++counter;
             file.WriteLine("Date and Time: " + txtboxDate.Text + " , " + txtboxTime.Text);
             file.WriteLine("Name: " + txtboxSurname.Text + "," + txtboxFirstName.Text + " " + txtboxMiddleInitial.Text + "." + " " + txtboxSuffix.Text);
             file.WriteLine("Birth Date: " + txtboxBirthdate.Text);
             file.WriteLine("Age: " + txtboxAge.Text + " years old");
             file.WriteLine("Sex: " + txtboxSex.Text);
-            file.WriteLine("Address: ");
+            file.WriteLine("ADDRESS ");
             file.WriteLine("Province: " + txtboxProvince.Text);
             file.WriteLine("City: " + txtboxCity.Text);
             file.WriteLine("Street Name: " + txtboxStreetName.Text);
@@ -38,10 +40,10 @@ namespace ContactTracingApp
             file.WriteLine("1st Dose: " + txtboxFirstDose.Text);
             file.WriteLine("2nd Dose: " + txtbox2ndDose.Text);
             file.WriteLine("----End of Response----");
+            file.WriteLine("");
             file.Close();
             MessageBox.Show("Thank you Mr/Ms." + txtboxSurname.Text);
             this.Close();
-
         }
 
         private void bttnAdminSignIn_Click(object sender, EventArgs e)

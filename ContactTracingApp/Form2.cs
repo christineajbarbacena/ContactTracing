@@ -34,15 +34,23 @@ namespace ContactTracingApp
             {
                 MessageBox.Show("No data on date " + txtboxDate.Text);
 
-            }//end of catch
-
-            
-     
+            }//end of catch 
         }
 
         private void lblDate_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bttnViewall_Click(object sender, EventArgs e)
+        {
+            var DataFile = Directory.EnumerateFiles(@"C:\Users\barbacena\Desktop\ContactTracingResponses");
+            foreach (string file in DataFile)
+            {
+
+
+            }
+        
         }
 
     }
