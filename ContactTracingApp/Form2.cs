@@ -52,5 +52,17 @@ namespace ContactTracingApp
             }
         }
 
+        private void bttnBacktoForm1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 main = new Form1();
+            main.ShowDialog();
+        }
+
+        private void bttnCloseall_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

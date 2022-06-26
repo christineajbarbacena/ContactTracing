@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.bttnSearch = new System.Windows.Forms.Button();
             this.lblInstruction1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,6 +36,8 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.lblViewAll = new System.Windows.Forms.Label();
             this.bttnViewall = new System.Windows.Forms.Button();
+            this.bttnBacktoForm1 = new System.Windows.Forms.Button();
+            this.bttnCloseall = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bttnSearch
@@ -50,6 +53,7 @@
             // lblInstruction1
             // 
             this.lblInstruction1.AutoSize = true;
+            this.lblInstruction1.ForeColor = System.Drawing.Color.Black;
             this.lblInstruction1.Location = new System.Drawing.Point(12, 38);
             this.lblInstruction1.Name = "lblInstruction1";
             this.lblInstruction1.Size = new System.Drawing.Size(204, 13);
@@ -84,6 +88,7 @@
             // lblViewAll
             // 
             this.lblViewAll.AutoSize = true;
+            this.lblViewAll.ForeColor = System.Drawing.SystemColors.InfoText;
             this.lblViewAll.Location = new System.Drawing.Point(12, 127);
             this.lblViewAll.Name = "lblViewAll";
             this.lblViewAll.Size = new System.Drawing.Size(97, 13);
@@ -92,19 +97,43 @@
             // 
             // bttnViewall
             // 
-            this.bttnViewall.Location = new System.Drawing.Point(250, 115);
+            this.bttnViewall.Location = new System.Drawing.Point(143, 117);
             this.bttnViewall.Name = "bttnViewall";
-            this.bttnViewall.Size = new System.Drawing.Size(75, 23);
+            this.bttnViewall.Size = new System.Drawing.Size(182, 23);
             this.bttnViewall.TabIndex = 6;
             this.bttnViewall.Text = "View all";
             this.bttnViewall.UseVisualStyleBackColor = true;
             this.bttnViewall.Click += new System.EventHandler(this.bttnViewall_Click);
             // 
+            // bttnBacktoForm1
+            // 
+            this.bttnBacktoForm1.Location = new System.Drawing.Point(73, 170);
+            this.bttnBacktoForm1.Name = "bttnBacktoForm1";
+            this.bttnBacktoForm1.Size = new System.Drawing.Size(75, 23);
+            this.bttnBacktoForm1.TabIndex = 7;
+            this.bttnBacktoForm1.Text = "Back";
+            this.bttnBacktoForm1.UseVisualStyleBackColor = true;
+            this.bttnBacktoForm1.Click += new System.EventHandler(this.bttnBacktoForm1_Click);
+            // 
+            // bttnCloseall
+            // 
+            this.bttnCloseall.Location = new System.Drawing.Point(181, 170);
+            this.bttnCloseall.Name = "bttnCloseall";
+            this.bttnCloseall.Size = new System.Drawing.Size(75, 23);
+            this.bttnCloseall.TabIndex = 8;
+            this.bttnCloseall.Text = "Close";
+            this.bttnCloseall.UseVisualStyleBackColor = true;
+            this.bttnCloseall.Click += new System.EventHandler(this.bttnCloseall_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 192);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(357, 214);
+            this.Controls.Add(this.bttnCloseall);
+            this.Controls.Add(this.bttnBacktoForm1);
             this.Controls.Add(this.bttnViewall);
             this.Controls.Add(this.lblViewAll);
             this.Controls.Add(this.lblDate);
@@ -112,6 +141,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblInstruction1);
             this.Controls.Add(this.bttnSearch);
+            this.DoubleBuffered = true;
             this.Name = "Form2";
             this.Text = "AdminForm";
             this.ResumeLayout(false);
@@ -128,5 +158,7 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblViewAll;
         private System.Windows.Forms.Button bttnViewall;
+        private System.Windows.Forms.Button bttnBacktoForm1;
+        private System.Windows.Forms.Button bttnCloseall;
     }
 }

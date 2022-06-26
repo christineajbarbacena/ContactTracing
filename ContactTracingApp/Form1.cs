@@ -40,6 +40,7 @@ namespace ContactTracingApp
             file.WriteLine("----End of Response----");
             file.WriteLine("");
             file.Close();
+            MessageBox.Show("I HEREBY CERTIFY that the information provided in this form is complete, true and correct.");
             MessageBox.Show("Thank you Mr/Ms." + txtboxSurname.Text);
             this.Close();
         }
