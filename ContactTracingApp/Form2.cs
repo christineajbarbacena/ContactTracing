@@ -20,9 +20,11 @@ namespace ContactTracingApp
 
         private void bttnAlldata_Click(object sender, EventArgs e)
         {
+
+            string date = txtboxDate.Text;
             try
             {
-                StreamReader responses = new StreamReader(@"C:\Users\barbacena\Desktop\ContactTracingResponses\" + txtboxDate + "," + "responses.txt");
+                StreamReader responses = new StreamReader(@"C:\Users\barbacena\Desktop\ContactTracingResponses\" + date + ".txt");
                 MessageBox.Show(responses.ReadToEnd());
                 responses.Close();
 
