@@ -50,19 +50,23 @@ namespace ContactTracingApp
             //adding username and password for sign in button
             string username = txtboxUsername.Text;
             string password = txtboxPassword.Text;
+
             if ((username == "admin") && (password == "admin"))
+
             //right password and username
             {
                 this.Hide();
                 Form2 adminForm = new Form2();
                 adminForm.ShowDialog();
             }
+
           //incorrect username and password
             else
             {
             MessageBox.Show ("Incorrect Username and/or Password");
             }
-        }
+
+        }//end of admin sign in
 
     }
 }
