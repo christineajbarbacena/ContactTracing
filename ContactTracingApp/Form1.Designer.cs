@@ -83,7 +83,7 @@
             this.lblGenerateQr = new System.Windows.Forms.Label();
             this.picboxGenerateQr = new System.Windows.Forms.PictureBox();
             this.bttnGenerate = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblScan = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).BeginInit();
             this.SuspendLayout();
             // 
@@ -599,7 +599,7 @@
             this.lblGenerateQr.AutoSize = true;
             this.lblGenerateQr.BackColor = System.Drawing.Color.Transparent;
             this.lblGenerateQr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenerateQr.Location = new System.Drawing.Point(665, 58);
+            this.lblGenerateQr.Location = new System.Drawing.Point(665, 26);
             this.lblGenerateQr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGenerateQr.Name = "lblGenerateQr";
             this.lblGenerateQr.Size = new System.Drawing.Size(137, 16);
@@ -608,16 +608,17 @@
             // 
             // picboxGenerateQr
             // 
-            this.picboxGenerateQr.Location = new System.Drawing.Point(668, 91);
+            this.picboxGenerateQr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picboxGenerateQr.Location = new System.Drawing.Point(668, 45);
             this.picboxGenerateQr.Name = "picboxGenerateQr";
-            this.picboxGenerateQr.Size = new System.Drawing.Size(198, 139);
+            this.picboxGenerateQr.Size = new System.Drawing.Size(182, 174);
             this.picboxGenerateQr.TabIndex = 52;
             this.picboxGenerateQr.TabStop = false;
             // 
             // bttnGenerate
             // 
             this.bttnGenerate.BackColor = System.Drawing.Color.LightGray;
-            this.bttnGenerate.Location = new System.Drawing.Point(785, 238);
+            this.bttnGenerate.Location = new System.Drawing.Point(785, 231);
             this.bttnGenerate.Name = "bttnGenerate";
             this.bttnGenerate.Size = new System.Drawing.Size(75, 29);
             this.bttnGenerate.TabIndex = 53;
@@ -625,17 +626,17 @@
             this.bttnGenerate.UseVisualStyleBackColor = false;
             this.bttnGenerate.Click += new System.EventHandler(this.bttnGenerate_Click);
             // 
-            // label1
+            // lblScan
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(665, 271);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 16);
-            this.label1.TabIndex = 54;
-            this.label1.Text = "Generate Qr Code:";
+            this.lblScan.AutoSize = true;
+            this.lblScan.BackColor = System.Drawing.Color.Transparent;
+            this.lblScan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScan.Location = new System.Drawing.Point(655, 264);
+            this.lblScan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblScan.Name = "lblScan";
+            this.lblScan.Size = new System.Drawing.Size(108, 16);
+            this.lblScan.TabIndex = 54;
+            this.lblScan.Text = "Scan Qr Code:";
             // 
             // Form1
             // 
@@ -645,7 +646,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(872, 475);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblScan);
             this.Controls.Add(this.bttnGenerate);
             this.Controls.Add(this.picboxGenerateQr);
             this.Controls.Add(this.lblGenerateQr);
@@ -770,7 +771,7 @@
         private System.Windows.Forms.Label lblGenerateQr;
         private System.Windows.Forms.PictureBox picboxGenerateQr;
         private System.Windows.Forms.Button bttnGenerate;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblScan;
     }
 }
 

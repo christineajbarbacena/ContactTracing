@@ -8,3 +8,4 @@ c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\Conta
 c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.exe
 c:\users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.pdb
 C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.Form2.resources
+C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\Zen.Barcode.Core.dll

@@ -82,8 +82,11 @@ namespace ContactTracingApp
             string secdose = txtbox2ndDose.Text;
             string booster = txtboxBooster.Text;
 
+            MessageBox.Show("Continue?");
+            MessageBox.Show("This will be generated into Qr Code");
             Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-
+            picboxGenerateQr.SizeMode = PictureBoxSizeMode.AutoSize;
+            picboxGenerateQr.Image = qrcode.Draw(name + bday + age + sex + address + email + number + vor + stdose + secdose + booster, 1);
 
 
 
