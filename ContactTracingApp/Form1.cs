@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Zen.Barcode;
 
 namespace ContactTracingApp
 {
@@ -88,8 +89,14 @@ namespace ContactTracingApp
             picboxGenerateQr.SizeMode = PictureBoxSizeMode.AutoSize;
             picboxGenerateQr.Image = qrcode.Draw(name + bday + age + sex + address + email + number + vor + stdose + secdose + booster, 1);
 
+        }
 
-
+        private void bttnsave_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog qr = new SaveFileDialog();
+            qr.ShowDialog();
+            picboxGenerateQr.Image.Save(qr.FileName);
+            MessageBox.Show("Image Saved");
         }
 
     }

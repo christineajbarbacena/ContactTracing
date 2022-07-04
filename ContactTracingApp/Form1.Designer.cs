@@ -84,6 +84,7 @@
             this.picboxGenerateQr = new System.Windows.Forms.PictureBox();
             this.bttnGenerate = new System.Windows.Forms.Button();
             this.lblScan = new System.Windows.Forms.Label();
+            this.bttnsave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).BeginInit();
             this.SuspendLayout();
             // 
@@ -618,7 +619,7 @@
             // bttnGenerate
             // 
             this.bttnGenerate.BackColor = System.Drawing.Color.LightGray;
-            this.bttnGenerate.Location = new System.Drawing.Point(785, 231);
+            this.bttnGenerate.Location = new System.Drawing.Point(668, 232);
             this.bttnGenerate.Name = "bttnGenerate";
             this.bttnGenerate.Size = new System.Drawing.Size(75, 29);
             this.bttnGenerate.TabIndex = 53;
@@ -638,6 +639,17 @@
             this.lblScan.TabIndex = 54;
             this.lblScan.Text = "Scan Qr Code:";
             // 
+            // bttnsave
+            // 
+            this.bttnsave.BackColor = System.Drawing.Color.LightGray;
+            this.bttnsave.Location = new System.Drawing.Point(775, 231);
+            this.bttnsave.Name = "bttnsave";
+            this.bttnsave.Size = new System.Drawing.Size(75, 29);
+            this.bttnsave.TabIndex = 55;
+            this.bttnsave.Text = "Save Qr ";
+            this.bttnsave.UseVisualStyleBackColor = false;
+            this.bttnsave.Click += new System.EventHandler(this.bttnsave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -646,6 +658,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(872, 475);
+            this.Controls.Add(this.bttnsave);
             this.Controls.Add(this.lblScan);
             this.Controls.Add(this.bttnGenerate);
             this.Controls.Add(this.picboxGenerateQr);
@@ -772,6 +785,7 @@
         private System.Windows.Forms.PictureBox picboxGenerateQr;
         private System.Windows.Forms.Button bttnGenerate;
         private System.Windows.Forms.Label lblScan;
+        private System.Windows.Forms.Button bttnsave;
     }
 }
 
