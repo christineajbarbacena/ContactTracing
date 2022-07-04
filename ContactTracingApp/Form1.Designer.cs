@@ -596,7 +596,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(644, 475);
+            this.ClientSize = new System.Drawing.Size(827, 475);
             this.Controls.Add(this.bttnAdminSignIn);
             this.Controls.Add(this.txtboxPassword);
             this.Controls.Add(this.lblPassword);
