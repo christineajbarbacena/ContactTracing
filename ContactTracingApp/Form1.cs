@@ -66,7 +66,28 @@ namespace ContactTracingApp
             MessageBox.Show ("Incorrect Username and/or Password");
             }
 
-        }//end of admin sign in
+        }
+
+        private void bttnGenerate_Click(object sender, EventArgs e)
+        {
+            string name = txtboxFirstName.Text + txtboxMiddleInitial.Text + txtboxSurname.Text + txtboxSuffix.Text;
+            string bday = txtboxBirthdate.Text;
+            string age = txtboxAge.Text;
+            string sex = txtboxSex.Text;
+            string address = txtboxProvince.Text + txtboxCity.Text + txtboxStreetName.Text + txtboxBarangay.Text;
+            string email = txtboxEmailAdd.Text;
+            string number = txtboxMobileNum.Text;
+            string vor = txtboxAYV.Text;
+            string stdose = txtboxFirstDose.Text;
+            string secdose = txtbox2ndDose.Text;
+            string booster = txtboxBooster.Text;
+
+            Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+
+
+
+
+        }
 
     }
 }

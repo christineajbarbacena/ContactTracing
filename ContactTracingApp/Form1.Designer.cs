@@ -80,6 +80,11 @@
             this.bttnAdminSignIn = new System.Windows.Forms.Button();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtboxUsername = new System.Windows.Forms.TextBox();
+            this.lblGenerateQr = new System.Windows.Forms.Label();
+            this.picboxGenerateQr = new System.Windows.Forms.PictureBox();
+            this.bttnGenerate = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -564,7 +569,7 @@
             this.bttnAdminSignIn.BackColor = System.Drawing.Color.DimGray;
             this.bttnAdminSignIn.Location = new System.Drawing.Point(536, 412);
             this.bttnAdminSignIn.Name = "bttnAdminSignIn";
-            this.bttnAdminSignIn.Size = new System.Drawing.Size(75, 23);
+            this.bttnAdminSignIn.Size = new System.Drawing.Size(75, 32);
             this.bttnAdminSignIn.TabIndex = 50;
             this.bttnAdminSignIn.Text = "Sign In";
             this.bttnAdminSignIn.UseVisualStyleBackColor = false;
@@ -589,6 +594,49 @@
             this.txtboxUsername.Size = new System.Drawing.Size(125, 22);
             this.txtboxUsername.TabIndex = 47;
             // 
+            // lblGenerateQr
+            // 
+            this.lblGenerateQr.AutoSize = true;
+            this.lblGenerateQr.BackColor = System.Drawing.Color.Transparent;
+            this.lblGenerateQr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenerateQr.Location = new System.Drawing.Point(665, 58);
+            this.lblGenerateQr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGenerateQr.Name = "lblGenerateQr";
+            this.lblGenerateQr.Size = new System.Drawing.Size(137, 16);
+            this.lblGenerateQr.TabIndex = 51;
+            this.lblGenerateQr.Text = "Generate Qr Code:";
+            // 
+            // picboxGenerateQr
+            // 
+            this.picboxGenerateQr.Location = new System.Drawing.Point(668, 91);
+            this.picboxGenerateQr.Name = "picboxGenerateQr";
+            this.picboxGenerateQr.Size = new System.Drawing.Size(198, 139);
+            this.picboxGenerateQr.TabIndex = 52;
+            this.picboxGenerateQr.TabStop = false;
+            // 
+            // bttnGenerate
+            // 
+            this.bttnGenerate.BackColor = System.Drawing.Color.LightGray;
+            this.bttnGenerate.Location = new System.Drawing.Point(785, 238);
+            this.bttnGenerate.Name = "bttnGenerate";
+            this.bttnGenerate.Size = new System.Drawing.Size(75, 29);
+            this.bttnGenerate.TabIndex = 53;
+            this.bttnGenerate.Text = "Generate";
+            this.bttnGenerate.UseVisualStyleBackColor = false;
+            this.bttnGenerate.Click += new System.EventHandler(this.bttnGenerate_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(665, 271);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 16);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Generate Qr Code:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -596,7 +644,11 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(827, 475);
+            this.ClientSize = new System.Drawing.Size(872, 475);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bttnGenerate);
+            this.Controls.Add(this.picboxGenerateQr);
+            this.Controls.Add(this.lblGenerateQr);
             this.Controls.Add(this.bttnAdminSignIn);
             this.Controls.Add(this.txtboxPassword);
             this.Controls.Add(this.lblPassword);
@@ -656,6 +708,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
+            ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -714,6 +767,10 @@
         private System.Windows.Forms.Button bttnAdminSignIn;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.TextBox txtboxUsername;
+        private System.Windows.Forms.Label lblGenerateQr;
+        private System.Windows.Forms.PictureBox picboxGenerateQr;
+        private System.Windows.Forms.Button bttnGenerate;
+        private System.Windows.Forms.Label label1;
     }
 }
 
