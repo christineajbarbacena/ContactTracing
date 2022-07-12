@@ -507,7 +507,7 @@
             // 
             // bttnSubmit
             // 
-            this.bttnSubmit.BackColor = System.Drawing.Color.Red;
+            this.bttnSubmit.BackColor = System.Drawing.Color.RosyBrown;
             this.bttnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSubmit.Location = new System.Drawing.Point(271, 344);
             this.bttnSubmit.Name = "bttnSubmit";

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IronBarCode;
 
 namespace ContactTracingApp
 {
@@ -27,15 +28,16 @@ namespace ContactTracingApp
         private void bttnsave_Click(object sender, EventArgs e)
         {
 
+
         }
 
 
         private void bttnGenerate_Click(object sender, EventArgs e)
         {
 
-            Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            picboxGenerateQr.Image = qrcode.Draw(txtboxresponses.Text,300);
-
+            picboxGenerateQr.SizeMode = PictureBoxSizeMode.AutoSize;
+            Zen.Barcode.CodeQrBarcodeDraw qrbarcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            picboxGenerateQr.Image = qrbarcode.Draw(txtboxresponses.Text, 200);
         }
 
      
