@@ -19,15 +19,16 @@ namespace ContactTracingApp
 
             StreamReader text = new StreamReader(@"C:\Users\barbacena\Desktop\ContactTracingResponses\generatedqr.txt");
             string response = text.ReadToEnd();
-            picboxGenerateQr
-
+            txtboxresponses.Text = response.ToString();
 
         }
+
 
         private void bttnsave_Click(object sender, EventArgs e)
         {
 
         }
+
 
         private void bttnGenerate_Click(object sender, EventArgs e)
         {
