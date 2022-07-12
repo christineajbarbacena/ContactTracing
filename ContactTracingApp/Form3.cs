@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,24 @@ namespace ContactTracingApp
         public Form3()
         {
             InitializeComponent();
+
+            StreamReader text = new StreamReader(@"C:\Users\barbacena\Desktop\ContactTracingResponses\generatedqr.txt");
+            string response = text.ReadToEnd();
+            picboxGenerateQr
+
+
         }
+
+        private void bttnsave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttnGenerate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+     
     }
 }

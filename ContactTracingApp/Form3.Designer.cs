@@ -33,15 +33,17 @@
             this.lblGenerateQr = new System.Windows.Forms.Label();
             this.bttnGenerate = new System.Windows.Forms.Button();
             this.bttnsave = new System.Windows.Forms.Button();
+            this.txtboxresponses = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).BeginInit();
             this.SuspendLayout();
             // 
             // picboxGenerateQr
             // 
+            this.picboxGenerateQr.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.picboxGenerateQr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picboxGenerateQr.Location = new System.Drawing.Point(16, 72);
             this.picboxGenerateQr.Name = "picboxGenerateQr";
-            this.picboxGenerateQr.Size = new System.Drawing.Size(182, 174);
+            this.picboxGenerateQr.Size = new System.Drawing.Size(267, 254);
             this.picboxGenerateQr.TabIndex = 53;
             this.picboxGenerateQr.TabStop = false;
             // 
@@ -59,23 +61,34 @@
             // 
             // bttnGenerate
             // 
-            this.bttnGenerate.BackColor = System.Drawing.Color.LightGray;
-            this.bttnGenerate.Location = new System.Drawing.Point(16, 275);
+            this.bttnGenerate.BackColor = System.Drawing.Color.OrangeRed;
+            this.bttnGenerate.Location = new System.Drawing.Point(374, 292);
             this.bttnGenerate.Name = "bttnGenerate";
-            this.bttnGenerate.Size = new System.Drawing.Size(75, 29);
+            this.bttnGenerate.Size = new System.Drawing.Size(153, 34);
             this.bttnGenerate.TabIndex = 55;
             this.bttnGenerate.Text = "Generate";
             this.bttnGenerate.UseVisualStyleBackColor = false;
+            this.bttnGenerate.Click += new System.EventHandler(this.bttnGenerate_Click);
             // 
             // bttnsave
             // 
             this.bttnsave.BackColor = System.Drawing.Color.LightGray;
-            this.bttnsave.Location = new System.Drawing.Point(123, 275);
+            this.bttnsave.Location = new System.Drawing.Point(101, 342);
             this.bttnsave.Name = "bttnsave";
-            this.bttnsave.Size = new System.Drawing.Size(75, 29);
+            this.bttnsave.Size = new System.Drawing.Size(94, 30);
             this.bttnsave.TabIndex = 56;
             this.bttnsave.Text = "Save Qr ";
             this.bttnsave.UseVisualStyleBackColor = false;
+            this.bttnsave.Click += new System.EventHandler(this.bttnsave_Click);
+            // 
+            // txtboxresponses
+            // 
+            this.txtboxresponses.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtboxresponses.Location = new System.Drawing.Point(324, 72);
+            this.txtboxresponses.Multiline = true;
+            this.txtboxresponses.Name = "txtboxresponses";
+            this.txtboxresponses.Size = new System.Drawing.Size(237, 201);
+            this.txtboxresponses.TabIndex = 57;
             // 
             // Form3
             // 
@@ -84,6 +97,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(615, 440);
+            this.Controls.Add(this.txtboxresponses);
             this.Controls.Add(this.bttnsave);
             this.Controls.Add(this.bttnGenerate);
             this.Controls.Add(this.lblGenerateQr);
@@ -102,5 +116,6 @@
         private System.Windows.Forms.Label lblGenerateQr;
         private System.Windows.Forms.Button bttnGenerate;
         private System.Windows.Forms.Button bttnsave;
+        private System.Windows.Forms.TextBox txtboxresponses;
     }
 }
