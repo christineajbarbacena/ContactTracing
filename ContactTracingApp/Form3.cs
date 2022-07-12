@@ -34,7 +34,7 @@ namespace ContactTracingApp
             if (dialog.ShowDialog() == DialogResult.OK)
 
             {
-                picboxGenerateQr.Image.Save(dialog.FileName);
+                pbqrcode.Image.Save(dialog.FileName);
             }
             MessageBox.Show("Image Saved");
         }
@@ -42,9 +42,13 @@ namespace ContactTracingApp
 
         private void bttnGenerate_Click(object sender, EventArgs e)
         { 
-            picboxGenerateQr.SizeMode = PictureBoxSizeMode.AutoSize;
+            string qrtext = txtboxresponses.Text;
+            txtboxresponses.Text = qrtext.ToString();
+
+            pbqrcode.SizeMode = PictureBoxSizeMode.AutoSize;
             Zen.Barcode.CodeQrBarcodeDraw qrbarcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            picboxGenerateQr.Image = qrbarcode.Draw(txtboxresponses.Text, 200);
+            pbqrcode.Image = qrbarcode.Draw(qrtext, 5);
+            
         }
 
      

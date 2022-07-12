@@ -29,24 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            this.picboxGenerateQr = new System.Windows.Forms.PictureBox();
             this.lblGenerateQr = new System.Windows.Forms.Label();
             this.bttnGenerate = new System.Windows.Forms.Button();
             this.bttnsave = new System.Windows.Forms.Button();
             this.txtboxresponses = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).BeginInit();
+            this.pbqrcode = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbqrcode)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picboxGenerateQr
-            // 
-            this.picboxGenerateQr.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.picboxGenerateQr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picboxGenerateQr.Location = new System.Drawing.Point(16, 72);
-            this.picboxGenerateQr.Name = "picboxGenerateQr";
-            this.picboxGenerateQr.Size = new System.Drawing.Size(302, 264);
-            this.picboxGenerateQr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picboxGenerateQr.TabIndex = 53;
-            this.picboxGenerateQr.TabStop = false;
             // 
             // lblGenerateQr
             // 
@@ -85,12 +74,20 @@
             // 
             // txtboxresponses
             // 
-            this.txtboxresponses.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtboxresponses.BackColor = System.Drawing.SystemColors.Info;
             this.txtboxresponses.Location = new System.Drawing.Point(352, 72);
             this.txtboxresponses.Multiline = true;
             this.txtboxresponses.Name = "txtboxresponses";
             this.txtboxresponses.Size = new System.Drawing.Size(106, 201);
             this.txtboxresponses.TabIndex = 57;
+            // 
+            // pbqrcode
+            // 
+            this.pbqrcode.Location = new System.Drawing.Point(16, 72);
+            this.pbqrcode.Name = "pbqrcode";
+            this.pbqrcode.Size = new System.Drawing.Size(301, 253);
+            this.pbqrcode.TabIndex = 58;
+            this.pbqrcode.TabStop = false;
             // 
             // Form3
             // 
@@ -99,17 +96,17 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(480, 394);
+            this.Controls.Add(this.pbqrcode);
             this.Controls.Add(this.txtboxresponses);
             this.Controls.Add(this.bttnsave);
             this.Controls.Add(this.bttnGenerate);
             this.Controls.Add(this.lblGenerateQr);
-            this.Controls.Add(this.picboxGenerateQr);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QrCode Generator";
-            ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbqrcode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,10 +114,10 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picboxGenerateQr;
         private System.Windows.Forms.Label lblGenerateQr;
         private System.Windows.Forms.Button bttnGenerate;
         private System.Windows.Forms.Button bttnsave;
         private System.Windows.Forms.TextBox txtboxresponses;
+        private System.Windows.Forms.PictureBox pbqrcode;
     }
 }
