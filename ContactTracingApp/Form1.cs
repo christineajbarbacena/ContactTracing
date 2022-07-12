@@ -93,7 +93,9 @@ namespace ContactTracingApp
             file.WriteLine(" ");
             file.Close();
 
-            Form3
+            Form3 GenerateForm = new Form3();
+            GenerateForm.ShowDialog();
+          
         }
 
     }
