@@ -43,7 +43,7 @@
             this.picboxGenerateQr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picboxGenerateQr.Location = new System.Drawing.Point(16, 72);
             this.picboxGenerateQr.Name = "picboxGenerateQr";
-            this.picboxGenerateQr.Size = new System.Drawing.Size(267, 254);
+            this.picboxGenerateQr.Size = new System.Drawing.Size(302, 264);
             this.picboxGenerateQr.TabIndex = 53;
             this.picboxGenerateQr.TabStop = false;
             // 
@@ -102,7 +102,10 @@
             this.Controls.Add(this.bttnGenerate);
             this.Controls.Add(this.lblGenerateQr);
             this.Controls.Add(this.picboxGenerateQr);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QrCode Generator";
             ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).EndInit();
             this.ResumeLayout(false);

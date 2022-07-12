@@ -27,8 +27,15 @@ namespace ContactTracingApp
 
         private void bttnsave_Click(object sender, EventArgs e)
         {
+            string dir = @"C:\Users\barbacena\Desktop\ContactTracingResponses";
+            var dialog = new SaveFileDialog();
+            dialog.InitialDirectory = dir;
+            dialog.Filter = "PNG|*.png|JPEG|*.jpg|GIF|*gif";
+            if (dialog.ShowDialog() == DialogResult.OK)
 
-
+            {
+                picboxGenerateQr.Image.Save(dialog.FileName);
+            }
         }
 
 
