@@ -44,6 +44,7 @@
             this.picboxGenerateQr.Location = new System.Drawing.Point(16, 72);
             this.picboxGenerateQr.Name = "picboxGenerateQr";
             this.picboxGenerateQr.Size = new System.Drawing.Size(302, 264);
+            this.picboxGenerateQr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picboxGenerateQr.TabIndex = 53;
             this.picboxGenerateQr.TabStop = false;
             // 
@@ -62,9 +63,9 @@
             // bttnGenerate
             // 
             this.bttnGenerate.BackColor = System.Drawing.Color.OrangeRed;
-            this.bttnGenerate.Location = new System.Drawing.Point(324, 292);
+            this.bttnGenerate.Location = new System.Drawing.Point(343, 293);
             this.bttnGenerate.Name = "bttnGenerate";
-            this.bttnGenerate.Size = new System.Drawing.Size(153, 34);
+            this.bttnGenerate.Size = new System.Drawing.Size(125, 25);
             this.bttnGenerate.TabIndex = 55;
             this.bttnGenerate.Text = "Generate";
             this.bttnGenerate.UseVisualStyleBackColor = false;
@@ -73,9 +74,10 @@
             // bttnsave
             // 
             this.bttnsave.BackColor = System.Drawing.Color.LightGray;
+            this.bttnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnsave.Location = new System.Drawing.Point(101, 342);
             this.bttnsave.Name = "bttnsave";
-            this.bttnsave.Size = new System.Drawing.Size(94, 30);
+            this.bttnsave.Size = new System.Drawing.Size(126, 30);
             this.bttnsave.TabIndex = 56;
             this.bttnsave.Text = "Save Qr ";
             this.bttnsave.UseVisualStyleBackColor = false;
@@ -84,10 +86,10 @@
             // txtboxresponses
             // 
             this.txtboxresponses.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtboxresponses.Location = new System.Drawing.Point(324, 72);
+            this.txtboxresponses.Location = new System.Drawing.Point(352, 72);
             this.txtboxresponses.Multiline = true;
             this.txtboxresponses.Name = "txtboxresponses";
-            this.txtboxresponses.Size = new System.Drawing.Size(147, 201);
+            this.txtboxresponses.Size = new System.Drawing.Size(106, 201);
             this.txtboxresponses.TabIndex = 57;
             // 
             // Form3
@@ -96,7 +98,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(480, 440);
+            this.ClientSize = new System.Drawing.Size(480, 394);
             this.Controls.Add(this.txtboxresponses);
             this.Controls.Add(this.bttnsave);
             this.Controls.Add(this.bttnGenerate);
