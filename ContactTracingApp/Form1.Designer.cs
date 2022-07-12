@@ -619,7 +619,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(872, 475);
+            this.ClientSize = new System.Drawing.Size(676, 475);
             this.Controls.Add(this.bttnScan);
             this.Controls.Add(this.bttnGenerate);
             this.Controls.Add(this.bttnAdminSignIn);

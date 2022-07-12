@@ -89,7 +89,6 @@ namespace ContactTracingApp
             file.WriteLine("Booster Shot: " + txtboxBooster.Text);
             file.WriteLine("1st Dose: " + txtboxFirstDose.Text);
             file.WriteLine("2nd Dose: " + txtbox2ndDose.Text);
-            file.WriteLine("----End of Response----");
             file.WriteLine(" ");
             file.Close();
 
