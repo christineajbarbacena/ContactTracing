@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.Encoding;
 
 namespace ContactTracingApp
 {
@@ -71,25 +70,8 @@ namespace ContactTracingApp
 
         private void bttnGenerate_Click(object sender, EventArgs e)
         {
-            string name = txtboxFirstName.Text +" ," + txtboxMiddleInitial.Text + ". " + txtboxSurname.Text + " ,"+ txtboxSuffix.Text;
-            string bday = txtboxBirthdate.Text;
-            string age = txtboxAge.Text;
-            string sex = txtboxSex.Text;
-            string address = txtboxProvince.Text + ", " + txtboxCity.Text + ", " +txtboxStreetName.Text + ", "+ txtboxBarangay.Text;
-            string email = txtboxEmailAdd.Text;
-            string number = txtboxMobileNum.Text;
-            string vor = txtboxAYV.Text;
-            string stdose = txtboxFirstDose.Text;
-            string secdose = txtbox2ndDose.Text;
-            string booster = txtboxBooster.Text;
-
-            string info = "Name: " + name + "  ,  " + "Birthdate: " + bday + " , " + "Age: "+ age + " , " + "Sex: " + sex + " , " + "Address: " + address + "Email Address: "  + email + " , " + "Mobile Number: " + number + " , " + "Are you Vaccinated?: " + vor + " , " + "First Dose: " + stdose + " , " + "Second Dose: " + secdose + " , " + "Booster Shot: " + booster; 
-            MessageBox.Show("Continue?");
-            MessageBox.Show("This will be generated into Qr Code");
-
-            Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            picboxGenerateQr.SizeMode = PictureBoxSizeMode.AutoSize;
-            picboxGenerateQr.Image = qrcode.Draw(name + bday + age + sex + address + email + number + vor + stdose + secdose + booster, 1);
+          
+            
 
         }
 
