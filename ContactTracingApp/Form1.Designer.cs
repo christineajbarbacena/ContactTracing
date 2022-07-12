@@ -611,6 +611,7 @@
             this.bttnScan.TabIndex = 52;
             this.bttnScan.Text = "Scan Qr Code";
             this.bttnScan.UseVisualStyleBackColor = false;
+            this.bttnScan.Click += new System.EventHandler(this.bttnScan_Click);
             // 
             // Form1
             // 

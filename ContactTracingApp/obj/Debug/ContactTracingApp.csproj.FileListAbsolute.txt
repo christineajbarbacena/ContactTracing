@@ -16,3 +16,4 @@ C:\Users\barbacena\Documents\Visual Studio 2013\Projects\ContactTracingApp\Conta
 C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\IronBarCode.dll
 C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\IronBarCode.xml
 C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.Form3.resources
+C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.Form4.resources

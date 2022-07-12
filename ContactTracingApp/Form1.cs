@@ -70,7 +70,7 @@ namespace ContactTracingApp
 
         private void bttnGenerate_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Redirecting you to Generate Form");
+            MessageBox.Show("Redirecting to Generate Form");
 
             StreamWriter file = new StreamWriter(@"C:\Users\barbacena\Desktop\ContactTracingResponses\generatedqr.txt", true);
             file.WriteLine("Date and Time: " + txtboxDate.Text + " , " + txtboxTime.Text + "Name: " + txtboxSurname.Text + "," + txtboxFirstName.Text + " " + txtboxMiddleInitial.Text + "." + " " + txtboxSuffix.Text + "Birth Date: " + txtboxBirthdate.Text + "Age: " + txtboxAge.Text + " years old" + "Sex: " + txtboxSex.Text + "ADDRESS " + txtboxProvince.Text + ", " + txtboxCity.Text + ", " + txtboxStreetName.Text + ", " + txtboxBarangay.Text);
@@ -79,6 +79,13 @@ namespace ContactTracingApp
             Form3 GenerateForm = new Form3();
             GenerateForm.ShowDialog();
           
+        }
+
+        private void bttnScan_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Redirecting to Scan Form");
+            Form4 ScanQr = new Form4();
+            ScanQr.ShowDialog();
         }
 
     }

@@ -36,6 +36,7 @@ namespace ContactTracingApp
             {
                 picboxGenerateQr.Image.Save(dialog.FileName);
             }
+            MessageBox.Show("Image Saved");
         }
 
 
