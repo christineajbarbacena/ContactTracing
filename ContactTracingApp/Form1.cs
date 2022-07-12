@@ -66,21 +66,34 @@ namespace ContactTracingApp
             MessageBox.Show ("Incorrect Username and/or Password");
             }
 
-        }
+        }//end of sign in button
 
-        private void bttnGenerate_Click(object sender, EventArgs e)
+        private void bttnGenerate_Click_1(object sender, EventArgs e)
         {
-          
-            
+            MessageBox.Show("Redirecting you to Generate Form");
 
-        }
+            StreamWriter file = new StreamWriter(@"C:\Users\barbacena\Desktop\ContactTracingResponses\generatedqr.txt", true);
+            file.WriteLine("Contact Tracing Response ");
+            file.WriteLine("Date and Time: " + txtboxDate.Text + " , " + txtboxTime.Text);
+            file.WriteLine("Name: " + txtboxSurname.Text + "," + txtboxFirstName.Text + " " + txtboxMiddleInitial.Text + "." + " " + txtboxSuffix.Text);
+            file.WriteLine("Birth Date: " + txtboxBirthdate.Text);
+            file.WriteLine("Age: " + txtboxAge.Text + " years old");
+            file.WriteLine("Sex: " + txtboxSex.Text);
+            file.WriteLine("ADDRESS ");
+            file.WriteLine("Province: " + txtboxProvince.Text);
+            file.WriteLine("City: " + txtboxCity.Text);
+            file.WriteLine("Street Name: " + txtboxStreetName.Text);
+            file.WriteLine("Barangay: " + txtboxBarangay.Text);
+            file.WriteLine("Vaccination Information");
+            file.WriteLine("Vaccinated: " + txtboxAYV.Text);
+            file.WriteLine("Booster Shot: " + txtboxBooster.Text);
+            file.WriteLine("1st Dose: " + txtboxFirstDose.Text);
+            file.WriteLine("2nd Dose: " + txtbox2ndDose.Text);
+            file.WriteLine("----End of Response----");
+            file.WriteLine(" ");
+            file.Close();
 
-        private void bttnsave_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog qr = new SaveFileDialog();
-            qr.ShowDialog();
-            picboxGenerateQr.Image.Save(qr.FileName);
-            MessageBox.Show("Image Saved");
+            Form3
         }
 
     }

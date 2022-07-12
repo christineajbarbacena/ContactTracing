@@ -80,12 +80,8 @@
             this.bttnAdminSignIn = new System.Windows.Forms.Button();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtboxUsername = new System.Windows.Forms.TextBox();
-            this.lblGenerateQr = new System.Windows.Forms.Label();
-            this.picboxGenerateQr = new System.Windows.Forms.PictureBox();
             this.bttnGenerate = new System.Windows.Forms.Button();
-            this.lblScan = new System.Windows.Forms.Label();
-            this.bttnsave = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).BeginInit();
+            this.bttnScan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -513,7 +509,7 @@
             // 
             this.bttnSubmit.BackColor = System.Drawing.Color.Red;
             this.bttnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnSubmit.Location = new System.Drawing.Point(271, 402);
+            this.bttnSubmit.Location = new System.Drawing.Point(271, 344);
             this.bttnSubmit.Name = "bttnSubmit";
             this.bttnSubmit.Size = new System.Drawing.Size(77, 32);
             this.bttnSubmit.TabIndex = 43;
@@ -595,60 +591,26 @@
             this.txtboxUsername.Size = new System.Drawing.Size(125, 22);
             this.txtboxUsername.TabIndex = 47;
             // 
-            // lblGenerateQr
-            // 
-            this.lblGenerateQr.AutoSize = true;
-            this.lblGenerateQr.BackColor = System.Drawing.Color.Transparent;
-            this.lblGenerateQr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenerateQr.Location = new System.Drawing.Point(665, 26);
-            this.lblGenerateQr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblGenerateQr.Name = "lblGenerateQr";
-            this.lblGenerateQr.Size = new System.Drawing.Size(137, 16);
-            this.lblGenerateQr.TabIndex = 51;
-            this.lblGenerateQr.Text = "Generate Qr Code:";
-            // 
-            // picboxGenerateQr
-            // 
-            this.picboxGenerateQr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picboxGenerateQr.Location = new System.Drawing.Point(668, 45);
-            this.picboxGenerateQr.Name = "picboxGenerateQr";
-            this.picboxGenerateQr.Size = new System.Drawing.Size(182, 174);
-            this.picboxGenerateQr.TabIndex = 52;
-            this.picboxGenerateQr.TabStop = false;
-            // 
             // bttnGenerate
             // 
-            this.bttnGenerate.BackColor = System.Drawing.Color.LightGray;
-            this.bttnGenerate.Location = new System.Drawing.Point(668, 232);
+            this.bttnGenerate.BackColor = System.Drawing.Color.Salmon;
+            this.bttnGenerate.Location = new System.Drawing.Point(247, 385);
             this.bttnGenerate.Name = "bttnGenerate";
-            this.bttnGenerate.Size = new System.Drawing.Size(75, 29);
-            this.bttnGenerate.TabIndex = 53;
-            this.bttnGenerate.Text = "Generate";
+            this.bttnGenerate.Size = new System.Drawing.Size(153, 32);
+            this.bttnGenerate.TabIndex = 51;
+            this.bttnGenerate.Text = "Generate Qr Code";
             this.bttnGenerate.UseVisualStyleBackColor = false;
-            this.bttnGenerate.Click += new System.EventHandler(this.bttnGenerate_Click);
+            this.bttnGenerate.Click += new System.EventHandler(this.bttnGenerate_Click_1);
             // 
-            // lblScan
+            // bttnScan
             // 
-            this.lblScan.AutoSize = true;
-            this.lblScan.BackColor = System.Drawing.Color.Transparent;
-            this.lblScan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScan.Location = new System.Drawing.Point(655, 264);
-            this.lblScan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblScan.Name = "lblScan";
-            this.lblScan.Size = new System.Drawing.Size(108, 16);
-            this.lblScan.TabIndex = 54;
-            this.lblScan.Text = "Scan Qr Code:";
-            // 
-            // bttnsave
-            // 
-            this.bttnsave.BackColor = System.Drawing.Color.LightGray;
-            this.bttnsave.Location = new System.Drawing.Point(775, 231);
-            this.bttnsave.Name = "bttnsave";
-            this.bttnsave.Size = new System.Drawing.Size(75, 29);
-            this.bttnsave.TabIndex = 55;
-            this.bttnsave.Text = "Save Qr ";
-            this.bttnsave.UseVisualStyleBackColor = false;
-            this.bttnsave.Click += new System.EventHandler(this.bttnsave_Click);
+            this.bttnScan.BackColor = System.Drawing.Color.Salmon;
+            this.bttnScan.Location = new System.Drawing.Point(247, 431);
+            this.bttnScan.Name = "bttnScan";
+            this.bttnScan.Size = new System.Drawing.Size(153, 32);
+            this.bttnScan.TabIndex = 52;
+            this.bttnScan.Text = "Scan Qr Code";
+            this.bttnScan.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -658,11 +620,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(872, 475);
-            this.Controls.Add(this.bttnsave);
-            this.Controls.Add(this.lblScan);
+            this.Controls.Add(this.bttnScan);
             this.Controls.Add(this.bttnGenerate);
-            this.Controls.Add(this.picboxGenerateQr);
-            this.Controls.Add(this.lblGenerateQr);
             this.Controls.Add(this.bttnAdminSignIn);
             this.Controls.Add(this.txtboxPassword);
             this.Controls.Add(this.lblPassword);
@@ -722,7 +681,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
-            ((System.ComponentModel.ISupportInitialize)(this.picboxGenerateQr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -781,11 +739,8 @@
         private System.Windows.Forms.Button bttnAdminSignIn;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.TextBox txtboxUsername;
-        private System.Windows.Forms.Label lblGenerateQr;
-        private System.Windows.Forms.PictureBox picboxGenerateQr;
         private System.Windows.Forms.Button bttnGenerate;
-        private System.Windows.Forms.Label lblScan;
-        private System.Windows.Forms.Button bttnsave;
+        private System.Windows.Forms.Button bttnScan;
     }
 }
 
