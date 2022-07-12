@@ -73,22 +73,7 @@ namespace ContactTracingApp
             MessageBox.Show("Redirecting you to Generate Form");
 
             StreamWriter file = new StreamWriter(@"C:\Users\barbacena\Desktop\ContactTracingResponses\generatedqr.txt", true);
-            file.WriteLine("Contact Tracing Response ");
-            file.WriteLine("Date and Time: " + txtboxDate.Text + " , " + txtboxTime.Text);
-            file.WriteLine("Name: " + txtboxSurname.Text + "," + txtboxFirstName.Text + " " + txtboxMiddleInitial.Text + "." + " " + txtboxSuffix.Text);
-            file.WriteLine("Birth Date: " + txtboxBirthdate.Text);
-            file.WriteLine("Age: " + txtboxAge.Text + " years old");
-            file.WriteLine("Sex: " + txtboxSex.Text);
-            file.WriteLine("ADDRESS ");
-            file.WriteLine("Province: " + txtboxProvince.Text);
-            file.WriteLine("City: " + txtboxCity.Text);
-            file.WriteLine("Street Name: " + txtboxStreetName.Text);
-            file.WriteLine("Barangay: " + txtboxBarangay.Text);
-            file.WriteLine("Vaccination Information");
-            file.WriteLine("Vaccinated: " + txtboxAYV.Text);
-            file.WriteLine("Booster Shot: " + txtboxBooster.Text);
-            file.WriteLine("1st Dose: " + txtboxFirstDose.Text);
-            file.WriteLine("2nd Dose: " + txtbox2ndDose.Text);
+            file.WriteLine("Date and Time: " + txtboxDate.Text + " , " + txtboxTime.Text + "Name: " + txtboxSurname.Text + "," + txtboxFirstName.Text + " " + txtboxMiddleInitial.Text + "." + " " + txtboxSuffix.Text + "Birth Date: " + txtboxBirthdate.Text + "Age: " + txtboxAge.Text + " years old" + "Sex: " + txtboxSex.Text + "ADDRESS " + txtboxProvince.Text + ", " + txtboxCity.Text + ", " + txtboxStreetName.Text + ", " + txtboxBarangay.Text);
             file.WriteLine(" ");
             file.Close();
 

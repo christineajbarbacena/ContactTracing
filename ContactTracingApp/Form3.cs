@@ -34,7 +34,7 @@ namespace ContactTracingApp
 
         private void bttnGenerate_Click(object sender, EventArgs e)
         {
-
+           
             picboxGenerateQr.SizeMode = PictureBoxSizeMode.AutoSize;
             Zen.Barcode.CodeQrBarcodeDraw qrbarcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
             picboxGenerateQr.Image = qrbarcode.Draw(txtboxresponses.Text, 200);
