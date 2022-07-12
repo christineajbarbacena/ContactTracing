@@ -74,7 +74,6 @@ namespace ContactTracingApp
 
             StreamWriter file = new StreamWriter(@"C:\Users\barbacena\Desktop\ContactTracingResponses\generatedqr.txt", true);
             file.WriteLine("Date and Time: " + txtboxDate.Text + " , " + txtboxTime.Text + "Name: " + txtboxSurname.Text + "," + txtboxFirstName.Text + " " + txtboxMiddleInitial.Text + "." + " " + txtboxSuffix.Text + "Birth Date: " + txtboxBirthdate.Text + "Age: " + txtboxAge.Text + " years old" + "Sex: " + txtboxSex.Text + "ADDRESS " + txtboxProvince.Text + ", " + txtboxCity.Text + ", " + txtboxStreetName.Text + ", " + txtboxBarangay.Text);
-            file.WriteLine(" ");
             file.Close();
 
             Form3 GenerateForm = new Form3();
