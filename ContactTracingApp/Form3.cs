@@ -46,7 +46,7 @@ namespace ContactTracingApp
             txtboxresponses.Text = qrtext.ToString();
 
             Zen.Barcode.CodeQrBarcodeDraw qrbarcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            pbqrcode.Image = qrbarcode.Draw(qrtext, 200);
+            pbqrcode.Image = qrbarcode.Draw(qrtext, 500);
             
         }
 

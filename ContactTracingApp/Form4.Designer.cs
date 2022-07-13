@@ -36,6 +36,7 @@
             this.txtboxScanQr = new System.Windows.Forms.TextBox();
             this.lblCamera = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.bttnstop = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageScan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             // bttnstart
             // 
-            this.bttnstart.Location = new System.Drawing.Point(312, 251);
+            this.bttnstart.Location = new System.Drawing.Point(278, 251);
             this.bttnstart.Name = "bttnstart";
             this.bttnstart.Size = new System.Drawing.Size(75, 23);
             this.bttnstart.TabIndex = 1;
@@ -89,6 +90,16 @@
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // bttnstop
+            // 
+            this.bttnstop.Location = new System.Drawing.Point(359, 251);
+            this.bttnstop.Name = "bttnstop";
+            this.bttnstop.Size = new System.Drawing.Size(75, 23);
+            this.bttnstop.TabIndex = 5;
+            this.bttnstop.Text = "stop";
+            this.bttnstop.UseVisualStyleBackColor = true;
+            this.bttnstop.Click += new System.EventHandler(this.bttnstop_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,6 +107,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(442, 311);
+            this.Controls.Add(this.bttnstop);
             this.Controls.Add(this.lblCamera);
             this.Controls.Add(this.txtboxScanQr);
             this.Controls.Add(this.pbImageScan);
@@ -118,5 +130,6 @@
         private System.Windows.Forms.TextBox txtboxScanQr;
         private System.Windows.Forms.Label lblCamera;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button bttnstop;
     }
 }

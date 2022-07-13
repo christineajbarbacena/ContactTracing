@@ -17,3 +17,9 @@ C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\Conta
 C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\IronBarCode.xml
 C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.Form3.resources
 C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\obj\Debug\ContactTracingApp.Form4.resources
+C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\AForge.dll
+C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\AForge.Video.dll
+C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\AForge.xml
+C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\AForge.Video.xml
+C:\Users\barbacena\documents\visual studio 2013\Projects\ContactTracingApp\ContactTracingApp\bin\Debug\AForge.Video.DirectShow.xml
