@@ -32,21 +32,6 @@ namespace ContactTracingApp
             bgworker.DoWork += bgworker_DoWork;
         }
 
-        void bgworker_DoWork(object sender, DoWorkEventArgs e)
-
-        {
-            QRCodeDecoder decoder = new QRCodeDecoder();
-
-            try
-            {
-                MessageBox.Show(decoder.Decode(new QRCodeBitmapImage ((Bitmap)pbImageScan.Image)));
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Error!!!");
-            }
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -87,28 +72,46 @@ namespace ContactTracingApp
 
         }//end of new framme
 
+
+       private void bttnstop_Click(object sender, EventArgs e)
+       {
+           try
+           {
+               timer.Stop();
+               vcdevice.Stop();
+               bttnstart.Enabled = true;
+               bttnstop.Enabled = false;
+           }
+           catch (Exception)
+           {
+               vcdevice.Stop();
+               MessageBox.Show("Error");
+           }
+       }
+
         private void timer_Tick(object sender, EventArgs e)
 
         {
             if (pbImageScan.Image != null && !bgworker.IsBusy)
                 bgworker.RunWorkerAsync();
+            
         }
 
-        private void bttnstop_Click(object sender, EventArgs e)
+        private void bgworker_DoWork(object sender, DoWorkEventArgs e)
         {
+            QRCodeDecoder decoder = new QRCodeDecoder();
+
             try
             {
-                timer.Stop();
-                vcdevice.Stop();
-                bttnstart.Enabled = true;
-                bttnstop.Enabled = false;
+                MessageBox.Show(decoder.Decode(new QRCodeBitmapImage((Bitmap)pbImageScan.Image)));
             }
-            catch(Exception)
+            catch (Exception)
             {
-                vcdevice.Stop();
-                MessageBox.Show("Error");
+                MessageBox.Show("Error!!!");
             }
         }
+
+        
 
      
     }
